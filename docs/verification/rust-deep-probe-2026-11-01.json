@@ -1,0 +1,326 @@
+{
+  "service": "rpc-failover-rs",
+  "version": "0.1.0",
+  "ready": true,
+  "chains": [
+    {
+      "name": "ethereum",
+      "protocol": "evm",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "ethereum-1",
+          "healthy": true,
+          "head": 26319852,
+          "checked_ago_ms": 2622,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 23
+        },
+        {
+          "name": "ethereum-2",
+          "healthy": true,
+          "head": 26319852,
+          "checked_ago_ms": 2612,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 33
+        }
+      ]
+    },
+    {
+      "name": "bsc",
+      "protocol": "evm",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "bsc-1",
+          "healthy": true,
+          "head": 131047139,
+          "checked_ago_ms": 2617,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 27
+        },
+        {
+          "name": "bsc-2",
+          "healthy": true,
+          "head": 131047138,
+          "checked_ago_ms": 2228,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 417
+        }
+      ]
+    },
+    {
+      "name": "polygon",
+      "protocol": "evm",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "polygon-1",
+          "healthy": true,
+          "head": 96553206,
+          "checked_ago_ms": 2618,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 27
+        },
+        {
+          "name": "polygon-2",
+          "healthy": true,
+          "head": 96553206,
+          "checked_ago_ms": 2625,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 20
+        }
+      ]
+    },
+    {
+      "name": "arbitrum",
+      "protocol": "evm",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "arbitrum-1",
+          "healthy": true,
+          "head": 520271148,
+          "checked_ago_ms": 2448,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 197
+        },
+        {
+          "name": "arbitrum-2",
+          "healthy": true,
+          "head": 520271150,
+          "checked_ago_ms": 2601,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 43
+        }
+      ]
+    },
+    {
+      "name": "base",
+      "protocol": "evm",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "base-1",
+          "healthy": true,
+          "head": 53372959,
+          "checked_ago_ms": 2592,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 33
+        },
+        {
+          "name": "base-2",
+          "healthy": true,
+          "head": 53372959,
+          "checked_ago_ms": 2600,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 22
+        }
+      ]
+    },
+    {
+      "name": "xlayer",
+      "protocol": "evm",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "xlayer-1",
+          "healthy": true,
+          "head": 74766229,
+          "checked_ago_ms": 2554,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 63
+        },
+        {
+          "name": "xlayer-2",
+          "healthy": true,
+          "head": 74766229,
+          "checked_ago_ms": 2440,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 177
+        }
+      ]
+    },
+    {
+      "name": "plasma",
+      "protocol": "evm",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "plasma-1",
+          "healthy": true,
+          "head": 36592805,
+          "checked_ago_ms": 1848,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 763
+        },
+        {
+          "name": "plasma-2",
+          "healthy": true,
+          "head": 36592804,
+          "checked_ago_ms": 2379,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 221
+        }
+      ]
+    },
+    {
+      "name": "solana",
+      "protocol": "solana",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "solana-1",
+          "healthy": true,
+          "head": 464088206,
+          "checked_ago_ms": 2591,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 8
+        },
+        {
+          "name": "solana-2",
+          "healthy": true,
+          "head": 464088204,
+          "checked_ago_ms": 2545,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 46
+        }
+      ]
+    },
+    {
+      "name": "aptos",
+      "protocol": "aptos",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "aptos-1",
+          "healthy": true,
+          "head": 7855261226,
+          "checked_ago_ms": 2533,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 58
+        },
+        {
+          "name": "aptos-2",
+          "healthy": true,
+          "head": 7855261226,
+          "checked_ago_ms": 2499,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 55
+        }
+      ]
+    },
+    {
+      "name": "ton",
+      "protocol": "ton_config",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "ton-1",
+          "healthy": true,
+          "head": null,
+          "checked_ago_ms": 2341,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 204
+        },
+        {
+          "name": "ton-2",
+          "healthy": true,
+          "head": null,
+          "checked_ago_ms": 2522,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 11
+        }
+      ]
+    },
+    {
+      "name": "tron",
+      "protocol": "tron_grpc",
+      "healthy_upstreams": 2,
+      "endpoints": [
+        {
+          "name": "tron-1",
+          "healthy": true,
+          "head": 87620605,
+          "checked_ago_ms": 2445,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 76
+        },
+        {
+          "name": "tron-2",
+          "healthy": true,
+          "head": 87620605,
+          "checked_ago_ms": 1512,
+          "cooldown_remaining_ms": 0,
+          "last_failure": null,
+          "successes": 0,
+          "failures": 0,
+          "latency_ms": 986
+        }
+      ]
+    }
+  ]
+}

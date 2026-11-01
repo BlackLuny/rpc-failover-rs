@@ -1,0 +1,17 @@
+name: Rust checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rust stable and Clippy
+        run: rustup toolchain install stable --profile minimal --component clippy
+      - name: Tests
+        run: cargo +stable test --all-targets --locked
+      - name: Clippy
+        run: cargo +stable clippy --all-targets --locked -- -D warnings
+      - name: BEpusdt cutover and rollback
+        run: python3 -m unittest discover -s tests -p 'test_*.py'

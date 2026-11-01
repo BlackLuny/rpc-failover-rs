@@ -1,0 +1,32 @@
+[Unit]
+Description=Authenticated blockchain RPC failover gateway
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=rpc-failover
+Group=rpc-failover
+ExecStart=/usr/local/bin/rpc-failover-rs serve --config /etc/rpc-failover-rs/config.toml
+EnvironmentFile=-/etc/rpc-failover-rs/upstream.env
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=10
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+CapabilityBoundingSet=
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

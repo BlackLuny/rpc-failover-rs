@@ -1,0 +1,11 @@
+/target/
+/target-rpc/
+/.cargo-rpc-cache/
+/.remote-compile.toml
+/config.local.toml
+/*.key
+/*.pem
+/.env
+/private/
+__pycache__/
+*.pyc

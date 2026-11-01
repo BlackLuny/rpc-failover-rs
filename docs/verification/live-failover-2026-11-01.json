@@ -1,0 +1,9 @@
+{
+  "scenario": "isolated local primary HTTP 503, public backup, cooldown and primary recovery",
+  "primary_selected": true,
+  "backup_selected_on_failure": true,
+  "failed_primary_excluded": true,
+  "primary_recovered": true,
+  "failover_ms": 10,
+  "production_configuration_changed": false
+}

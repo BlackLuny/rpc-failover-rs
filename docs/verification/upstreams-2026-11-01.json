@@ -1,0 +1,341 @@
+{
+  "observed_utc": "2026-11-01T11:45:25.006373+00:00",
+  "scope": "Read-only API methods from the deployment host; not an uptime guarantee",
+  "healthy_addresses_per_chain": {
+    "ethereum": 2,
+    "bsc": 2,
+    "polygon": 2,
+    "arbitrum": 2,
+    "base": 2,
+    "xlayer": 2,
+    "plasma": 2,
+    "solana": 2,
+    "aptos": 2,
+    "ton": 2,
+    "tron": 2
+  },
+  "results": [
+    {
+      "chain": "ethereum",
+      "url": "https://ethereum.publicnode.com",
+      "ok": true,
+      "chain_id": 1,
+      "head": 26319706,
+      "log_count": 337,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 814
+    },
+    {
+      "chain": "ethereum",
+      "url": "https://eth.drpc.org",
+      "ok": true,
+      "chain_id": 1,
+      "head": 26319706,
+      "log_count": 337,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 639
+    },
+    {
+      "chain": "bsc",
+      "url": "https://bsc.publicnode.com",
+      "ok": true,
+      "chain_id": 56,
+      "head": 131043263,
+      "log_count": 155,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 299
+    },
+    {
+      "chain": "bsc",
+      "url": "https://1rpc.io/bnb",
+      "ok": true,
+      "chain_id": 56,
+      "head": 131043262,
+      "log_count": 174,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 1432
+    },
+    {
+      "chain": "polygon",
+      "url": "https://polygon.drpc.org",
+      "ok": true,
+      "chain_id": 137,
+      "head": 96552044,
+      "log_count": 296,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 541
+    },
+    {
+      "chain": "polygon",
+      "url": "https://polygon.publicnode.com",
+      "ok": true,
+      "chain_id": 137,
+      "head": 96552044,
+      "log_count": 296,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 302
+    },
+    {
+      "chain": "arbitrum",
+      "url": "https://arb1.arbitrum.io/rpc",
+      "ok": true,
+      "chain_id": 42161,
+      "head": 520265186,
+      "log_count": 2,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 662
+    },
+    {
+      "chain": "arbitrum",
+      "url": "https://arbitrum-one-rpc.publicnode.com",
+      "ok": true,
+      "chain_id": 42161,
+      "head": 520265188,
+      "log_count": 1,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 325
+    },
+    {
+      "chain": "base",
+      "url": "https://base-rpc.publicnode.com",
+      "ok": true,
+      "chain_id": 8453,
+      "head": 53372087,
+      "log_count": 108,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 336
+    },
+    {
+      "chain": "base",
+      "url": "https://base.drpc.org",
+      "ok": true,
+      "chain_id": 8453,
+      "head": 53372087,
+      "log_count": 108,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 613
+    },
+    {
+      "chain": "xlayer",
+      "url": "https://rpc.xlayer.tech",
+      "ok": true,
+      "chain_id": 196,
+      "head": 74764486,
+      "log_count": 9,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 349
+    },
+    {
+      "chain": "xlayer",
+      "url": "https://xlayerrpc.okx.com",
+      "ok": true,
+      "chain_id": 196,
+      "head": 74764486,
+      "log_count": 9,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 330
+    },
+    {
+      "chain": "plasma",
+      "url": "https://rpc.plasma.to",
+      "ok": true,
+      "chain_id": 9745,
+      "head": 36591062,
+      "log_count": 1,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 2475
+    },
+    {
+      "chain": "plasma",
+      "url": "https://plasma.gateway.tenderly.co",
+      "ok": true,
+      "chain_id": 9745,
+      "head": 36591061,
+      "log_count": 0,
+      "methods": [
+        "batch",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_getBlockByNumber",
+        "eth_getLogs"
+      ],
+      "latency_ms": 826
+    },
+    {
+      "chain": "solana",
+      "url": "https://api.mainnet-beta.solana.com",
+      "ok": true,
+      "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+      "head": 464080080,
+      "methods": [
+        "getGenesisHash",
+        "getSlot",
+        "getBlock"
+      ],
+      "latency_ms": 238
+    },
+    {
+      "chain": "solana",
+      "url": "https://solana-rpc.publicnode.com",
+      "ok": true,
+      "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+      "head": 464080081,
+      "methods": [
+        "getGenesisHash",
+        "getSlot",
+        "getBlock"
+      ],
+      "latency_ms": 370
+    },
+    {
+      "chain": "aptos",
+      "url": "https://fullnode.mainnet.aptoslabs.com",
+      "ok": true,
+      "chain_id": 1,
+      "head": 7855037073,
+      "methods": [
+        "GET /v1",
+        "GET /v1/transactions"
+      ],
+      "latency_ms": 211
+    },
+    {
+      "chain": "aptos",
+      "url": "https://aptos-rest.publicnode.com",
+      "ok": true,
+      "chain_id": 1,
+      "head": 7855037075,
+      "methods": [
+        "GET /v1",
+        "GET /v1/transactions"
+      ],
+      "latency_ms": 222
+    },
+    {
+      "chain": "ton",
+      "url": "https://ton.org/global-config.json",
+      "ok": true,
+      "genesis": "F6OpKZKqvqeFp6CQmFomXNMfMj2EnaUSOXN+Mh+wVWk=",
+      "liteservers": 18,
+      "methods": [
+        "GET global config"
+      ],
+      "latency_ms": 191
+    },
+    {
+      "chain": "ton",
+      "url": "https://ton-blockchain.github.io/global.config.json",
+      "ok": true,
+      "genesis": "F6OpKZKqvqeFp6CQmFomXNMfMj2EnaUSOXN+Mh+wVWk=",
+      "liteservers": 18,
+      "methods": [
+        "GET global config"
+      ],
+      "latency_ms": 273
+    },
+    {
+      "chain": "tron",
+      "url": "https://tron-grpc.publicnode.com:443",
+      "ok": true,
+      "genesis": "00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
+      "head": 87620026,
+      "methods": [
+        "GetBlockByNum2",
+        "GetNowBlock2",
+        "gRPC trailers"
+      ],
+      "latency_ms": 193
+    },
+    {
+      "chain": "tron",
+      "url": "http://3.225.171.164:50051",
+      "ok": true,
+      "genesis": "00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
+      "head": 87620026,
+      "methods": [
+        "GetBlockByNum2",
+        "GetNowBlock2",
+        "gRPC trailers"
+      ],
+      "latency_ms": 1134
+    }
+  ]
+}

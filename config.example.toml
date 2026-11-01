@@ -1,0 +1,157 @@
+# Replace the digest by running: rpc-failover-rs keygen --out /secure/token
+# The sample digest is deliberately not a usable credential.
+listen = "127.0.0.1:8547"
+
+[auth]
+keys = [{ id = "bepusdt", sha256 = "0000000000000000000000000000000000000000000000000000000000000000" }]
+
+[policy]
+connect_timeout_ms = 1500
+attempt_timeout_ms = 3000
+total_timeout_ms = 9000
+cooldown_ms = 30000
+probe_interval_ms = 20000
+max_probe_age_ms = 60000
+
+[[chains]]
+name = "ethereum"
+protocol = "evm"
+chain_id = 1
+max_head_lag = 64
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "ethereum-1"
+url = "https://ethereum.publicnode.com"
+[[chains.upstreams]]
+name = "ethereum-2"
+url = "https://eth.drpc.org"
+
+[[chains]]
+name = "bsc"
+protocol = "evm"
+chain_id = 56
+max_head_lag = 64
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "bsc-1"
+url = "https://bsc.publicnode.com"
+[[chains.upstreams]]
+name = "bsc-2"
+url = "https://1rpc.io/bnb"
+
+[[chains]]
+name = "polygon"
+protocol = "evm"
+chain_id = 137
+max_head_lag = 64
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "polygon-1"
+url = "https://polygon.drpc.org"
+[[chains.upstreams]]
+name = "polygon-2"
+url = "https://polygon.publicnode.com"
+
+[[chains]]
+name = "arbitrum"
+protocol = "evm"
+chain_id = 42161
+max_head_lag = 64
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "arbitrum-1"
+url = "https://arb1.arbitrum.io/rpc"
+[[chains.upstreams]]
+name = "arbitrum-2"
+url = "https://arbitrum-one-rpc.publicnode.com"
+
+[[chains]]
+name = "base"
+protocol = "evm"
+chain_id = 8453
+max_head_lag = 64
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "base-1"
+url = "https://base-rpc.publicnode.com"
+[[chains.upstreams]]
+name = "base-2"
+url = "https://base.drpc.org"
+
+[[chains]]
+name = "xlayer"
+protocol = "evm"
+chain_id = 196
+max_head_lag = 64
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "xlayer-1"
+url = "https://rpc.xlayer.tech"
+[[chains.upstreams]]
+name = "xlayer-2"
+url = "https://xlayerrpc.okx.com"
+
+[[chains]]
+name = "plasma"
+protocol = "evm"
+chain_id = 9745
+max_head_lag = 64
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "plasma-1"
+url = "https://rpc.plasma.to"
+[[chains.upstreams]]
+name = "plasma-2"
+url = "https://plasma.gateway.tenderly.co"
+
+[[chains]]
+name = "solana"
+protocol = "solana"
+genesis = "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d"
+max_head_lag = 128
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "solana-1"
+url = "https://api.mainnet-beta.solana.com"
+[[chains.upstreams]]
+name = "solana-2"
+url = "https://solana-rpc.publicnode.com"
+
+[[chains]]
+name = "aptos"
+protocol = "aptos"
+chain_id = 1
+max_head_lag = 10000
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "aptos-1"
+url = "https://fullnode.mainnet.aptoslabs.com"
+[[chains.upstreams]]
+name = "aptos-2"
+url = "https://aptos-rest.publicnode.com"
+
+[[chains]]
+name = "ton"
+protocol = "ton_config"
+genesis = "F6OpKZKqvqeFp6CQmFomXNMfMj2EnaUSOXN+Mh+wVWk="
+max_head_lag = 128
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "ton-1"
+url = "https://ton.org/global-config.json"
+[[chains.upstreams]]
+name = "ton-2"
+url = "https://ton-blockchain.github.io/global.config.json"
+
+[[chains]]
+name = "tron"
+protocol = "tron_grpc"
+genesis = "00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc"
+max_head_lag = 128
+max_head_age_secs = 120
+[[chains.upstreams]]
+name = "tron-1"
+url = "https://tron-grpc.publicnode.com:443"
+[[chains.upstreams]]
+name = "tron-2"
+url = "http://3.225.171.164:50051"
